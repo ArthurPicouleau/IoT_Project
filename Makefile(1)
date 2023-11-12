@@ -1,0 +1,13 @@
+APPLICATION = projet
+
+BOARD ?= iotlab-m3
+
+FEATURES_REQUIRED = periph_i2c
+
+USEMODULE += ztimer_sec
+USEMODULE +=isl29020
+
+
+RIOTBASE ?= $(CURDIR)/../../RIOT
+
+include $(RIOTBASE)/Makefile.include
