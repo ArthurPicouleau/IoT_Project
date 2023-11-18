@@ -26,4 +26,9 @@ We are waiting for the experiment to switch to "Running" status.
 ```
 make BOARD=iotlab-m3 IOTLAB_NODE=auto flash
 ```
-![Image1](Experiments.png)
+
+To see the results, go to the "My experiments" section on Iot-LAB.
+You will get the following result:
+![Image1](Experiments.PNG)
+
+Click on the arrow next to running and then on "View Details".
