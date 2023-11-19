@@ -36,4 +36,6 @@ You will then get the following page:
 
 ![Image2](Terminal.PNG)
 
-Finally, in the "Action" section, click on "Open Terminal". You will then see the sensor values appear.
+Finally, in the "Action" section, click on "Open Terminal". You will then see the sensor values appear:
+
+![Image3](Results.PNG)
