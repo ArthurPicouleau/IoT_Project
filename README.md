@@ -55,12 +55,16 @@ env SITE=saclay
 iotlab-experiment submit -n "riot-coap" -d 60 -l 2,archi=m3:at86rf231+site=saclay
 ```
 ```
-iotlab-experiment wait --timeout 30 --cancel-on-timeout
+iotlab-experiment wait --timeout 30 --cancel-on-timeou
+```
+```
+iotlab-experiment --jmespath="items[*].network_address | sort(@)" get --nodes
 ```
 
 Then open the .ipynb file, which is a Jupyter notebook. Run the code. You will obtain two values: CHANNEL ID and PAN_ID, which are essential for establishing communication.
+Here you can see an example of values :
 
-![Image4](/COAP Communication/Notebook_example.PNG)
+![Image4](/COAP_Communication/Notebook_example.PNG)
 
 Then, in the first terminal, type the following command:
 
@@ -68,7 +72,7 @@ Then, in the first terminal, type the following command:
 make DEFAULT_CHANNEL=<channel> DEFAULT_PAN_ID=<pan_id> IOTLAB_NODE=m3-<id>.<site>.iot-lab.info -C. flash term
 ```
 
-Replace <channel>  and <pan_id> with the values obtained using the notebook. Then the value of <site> and <id> by the name and value of the node obtained by the last command.
+Replace  <channel>  and <pan_id> with the values obtained using the notebook. Then the value of <site> and <id> by the name and value of the node obtained by the fourth command.
 
 In the second type the same command but change the <id> of the site. Take the second node.
 
