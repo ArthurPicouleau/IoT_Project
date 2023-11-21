@@ -110,3 +110,4 @@ Here, you can see the results with the temperature.
 We only succeeded in communicating the temperature. 
 When we test with brightness and pressure we get the following result:
 
+![Image6](/COAP_Communication/Results_Coap2.PNG)
