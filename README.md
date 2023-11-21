@@ -39,3 +39,6 @@ You will then get the following page:
 Finally, in the "Action" section, click on "Open Terminal". You will then see the sensor values appear:
 
 ![Image3](Results.PNG)
+
+
+Secondly, we tried to communicate between two IOT LAB nodes using the Coap protocol.
