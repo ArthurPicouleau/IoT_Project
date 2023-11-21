@@ -29,16 +29,16 @@ make BOARD=iotlab-m3 IOTLAB_NODE=auto flash
 
 To see the results, go to the "My experiments" section on Iot-LAB.
 You will get the following result:
-![Image1](Experiments.PNG)
+![Image1](/Sensors/Experiments.PNG)
 
 Click on the arrow next to running and then on "View Details".
 You will then get the following page:
 
-![Image2](Terminal.PNG)
+![Image2](/Sensors/Terminal.PNG)
 
 Finally, in the "Action" section, click on "Open Terminal". You will then see the sensor values appear:
 
-![Image3](Results.PNG)
+![Image3](/Sensors/Results.PNG)
 
 
 Secondly, we tried to communicate between two IOT LAB nodes using the Coap protocol.
