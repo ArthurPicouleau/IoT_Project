@@ -103,4 +103,10 @@ coap get <ip_v6> : 5683 /temperature
 ```
 You have just to replace by the IP V6 adress of the server.
 
+Here, you can see the results with the temperature.
+
+![Image6](/COAP_Communication/Results_Coap.PNG)
+
+We only succeeded in communicating the temperature. 
+When we test with brightness and pressure we get the following result:
 
