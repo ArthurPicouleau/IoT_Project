@@ -72,9 +72,22 @@ Then, in the first terminal, type the following command:
 make DEFAULT_CHANNEL=<channel> DEFAULT_PAN_ID=<pan_id> IOTLAB_NODE=m3-<id>.<site>.iot-lab.info -C. flash term
 ```
 
-Replace  <channel>  and <pan_id> with the values obtained using the notebook. Then the value of <site> and <id> by the name and value of the node obtained by the fourth command.
+Replace  **<channel>**  and **<pan_id>** with the values obtained using the notebook. Then the value of <site> and <id> by the name and value of the node obtained by the fourth command.
 
-In the second type the same command but change the <id> of the site. Take the second node.
+In the second, type the same command but change the <id> of the site. Take the second node.
+
+In the first terminal, which we will now call the coap server, you can type the following command: 
+```
+ifconfig
+```
+to obtain the IP V6 address of the coap server.
+
+You can also use the coap info command :
+
+```
+coap info
+```
+to obtain the port on which the server is listening.
 
 
 
