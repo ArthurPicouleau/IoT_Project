@@ -6,7 +6,7 @@ With this card, we have access to a luminosity sensor (ISL29020), a pressure sen
 To develop our application we used RIOT OS on IoT-LAB.
 
 To run the code to retrieve data from the sensors, you need to go to the Jupyter Lab server on IoT-LAB.
-Next, create a folder within the riot folder. Put in the main.c and Makefile files provided in this Github folder.
+Next, create a folder within the riot folder. Put in the main.c and Makefile files provided in the Sensors folder, in the Github repository.
 Then open a terminal and go to the folder containing the main.c file.
 Select an environment with the following command :
 ```
