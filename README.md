@@ -5,6 +5,8 @@ We decided to use the IOT_LAB M3 board because it contains all the sensors we ne
 With this card, we have access to a luminosity sensor (ISL29020), a pressure sensor and a temperature sensor (LPS331AP), which is exactly what we needed for our weather station application.
 To develop our application we used RIOT OS on IoT-LAB.
 
+## Part 1 : Sensors ##
+
 To run the code to retrieve data from the sensors, you need to go to the Jupyter Lab server on IoT-LAB.
 Next, create a folder within the riot folder. Put in the main.c and Makefile files provided in the Sensors folder, in the Github repository.
 Then open a terminal and go to the folder containing the main.c file.
@@ -40,6 +42,7 @@ Finally, in the "Action" section, click on "Open Terminal". You will then see th
 
 ![Image3](/Sensors/Results.PNG)
 
+## Part 2 : COAP Communication ##
 
 Secondly, we tried to communicate between two IOT LAB nodes using the Coap protocol.
 
@@ -72,9 +75,9 @@ Then, in the first terminal, type the following command:
 make DEFAULT_CHANNEL=<channel> DEFAULT_PAN_ID=<pan_id> IOTLAB_NODE=m3-<id>.<site>.iot-lab.info -C. flash term
 ```
 
-Replace  **<channel>**  and **<pan_id>** with the values obtained using the notebook. Then the value of <site> and <id> by the name and value of the node obtained by the fourth command.
+Replace ```<channel>```  and ```<pan_id>``` with the values obtained using the notebook. Then the value of <site> and <id> by the name and value of the node obtained by the fourth command.
 
-In the second, type the same command but change the <id> of the site. Take the second node.
+In the second, type the same command but change the ```<id>``` of the site. Take the second node.
 
 In the first terminal, which we will now call the coap server, you can type the following command: 
 ```
@@ -82,7 +85,7 @@ ifconfig
 ```
 to obtain the IP V6 address of the coap server.
 
-You can also use the coap info command :
+You can also use the ```coap info``` command :
 
 ```
 coap info
