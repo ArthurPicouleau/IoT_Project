@@ -60,6 +60,8 @@ iotlab-experiment wait --timeout 30 --cancel-on-timeout
 
 Then open the .ipynb file, which is a Jupyter notebook. Run the code. You will obtain two values: CHANNEL ID and PAN_ID, which are essential for establishing communication.
 
+![Image4](/COAP Communication/Notebook_example.PNG)
+
 Then, in the first terminal, type the following command:
 
 ```
