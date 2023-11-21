@@ -90,8 +90,14 @@ You can also use the ```coap info``` command :
 ```
 coap info
 ```
-to obtain the port on which the server is listening.
+to obtain the port on which the server is listening. By default, the server listens on port 5683
 
+You can then test communication with the second node, the coap client, by typing in the second terminal the following command ```ping``` followed by the server's IPV6 address.
 
+Finally, to retrieve the temperature values from the sensor, you can type the following command:
+```
+coap get <ip_v6> : 5683 /temperature
+```
+You have just to replace by the IP V6 adress of the server.
 
 
