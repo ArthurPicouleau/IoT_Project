@@ -66,7 +66,7 @@ Then, in the first terminal, type the following command:
 make DEFAULT_CHANNEL=<channel> DEFAULT_PAN_ID=<pan_id> IOTLAB_NODE=m3-<id>.<site>.iot-lab.info -C. flash term
 ```
 
-Replace <channel> and <pan_id> with the values obtained using the notebook. Then the value of <site> and <id> by the name and value of the node obtained by the last command.
+Replace <channel>  and <pan_id> with the values obtained using the notebook. Then the value of <site> and <id> by the name and value of the node obtained by the last command.
 
 In the second type the same command but change the <id> of the site. Take the second node.
 
