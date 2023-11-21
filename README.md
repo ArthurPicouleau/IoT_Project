@@ -78,6 +78,9 @@ make DEFAULT_CHANNEL=<channel> DEFAULT_PAN_ID=<pan_id> IOTLAB_NODE=m3-<id>.<site
 Replace ```<channel>```  and ```<pan_id>``` with the values obtained using the notebook. Then the value of <site> and <id> by the name and value of the node obtained by the fourth command.
 
 In the second, type the same command but change the ```<id>``` of the site. Take the second node.
+Here,you can see the two nodes in the IOT-LAB:
+
+![Image5](/COAP_Communication/Coap.PNG)
 
 In the first terminal, which we will now call the coap server, you can type the following command: 
 ```
