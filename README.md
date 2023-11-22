@@ -125,3 +125,9 @@ The messages were received in our iot-core test client, after setting up the sec
 You can adjust your security policies in aws iot-core security -> policies panel.
 
 ![Image7](/MQTT_Communication/aws_iot_core.png)
+
+
+## Part 4 : Demonstration video ##
+
+[![Demonstration video]
+(https://youtu.be/o6aV18wc0wo)
