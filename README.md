@@ -114,10 +114,10 @@ When we test with brightness and pressure we get the following result:
 
 ## Part 3 : MQTT Communication ##
 
-We also tried mqtt communication, but we were unable to send a mqtt message from the board to any broker. How ever, we tested and set up mqtt bridge
-connecting to aws, incase we succeed in sending the message to iotlab mqtt broker, or to our own broker, from the board. Below you can see that we bridged some topic 
-for testing purposes that was being posted to mosquitto broker, to our controlled aws iot-core. Aws seems to have strict security and so that a device
-can connect to aws, it needs to have the certificates and private keys, which we setup to our bridge.
+We also tried mqtt communication, but we were unable to send a mqtt message from the board to any broker. However, we tested and set up mqtt bridge
+connecting to AWS, incase we succeed in sending the message to iotlab mqtt broker, or to our own broker, from the board. Below you can see that we bridged some topic 
+for testing purposes that was being posted to mosquitto broker, to our controlled AWS iot-core. AWS seems to have strict security and so that a device
+can connect to AWS, it needs to have the certificates and private keys, which we setup to our bridge.
 
 ![Image7](/MQTT_Communication/mqtt_bridge.png)
 
