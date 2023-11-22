@@ -101,7 +101,7 @@ Finally, to retrieve the temperature values from the sensor, you can type the fo
 ```
 coap get <ip_v6> : 5683 /temperature
 ```
-You have just to replace by the IP V6 adress of the server.
+You have just to replace ```<ip_v6>``` by the IP V6 adress of the server.
 
 Here, you can see the results with the temperature.
 
