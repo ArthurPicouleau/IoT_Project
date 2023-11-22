@@ -122,5 +122,6 @@ can connect to AWS, it needs to have the certificates and private keys, which we
 ![Image7](/MQTT_Communication/mqtt_bridge.png)
 
 The messages were received in our iot-core test client, after setting up the security policy allowing our bridge to connect and publish to it.
+You can adjust your security policies in aws iot-core security -> policies panel.
 
 ![Image7](/MQTT_Communication/aws_iot_core.png)
