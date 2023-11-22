@@ -111,3 +111,15 @@ We only succeeded in communicating the temperature.
 When we test with brightness and pressure we get the following result:
 
 ![Image6](/COAP_Communication/Results_Coap2.PNG)
+
+## MQTT Communication
+We also tried mqtt communication, but we were unable to send a mqtt message from the board to any broker. How ever, we tested and set up mqtt bridge
+connecting to aws, incase we succeed in sending the message to iotlab mqtt broker, or to our own broker, from the board. Below you can see that we bridged some topic 
+for testing purposes that was being posted to mosquitto broker, to our controlled aws iot-core. Aws seems to have strict security and so that a device
+can connect to aws, it needs to have the certificates and private keys, which we setup to our bridge.
+
+![Image7](/MQTT_Communication/mqtt_bridge.png)
+
+The messages were received in our iot-core test client, after setting up the security policy allowing our bridge to connect and publish to it.
+
+![Image7](/MQTT_Communication/aws_iot_core.png)
