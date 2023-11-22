@@ -58,7 +58,7 @@ env SITE=saclay
 iotlab-experiment submit -n "riot-coap" -d 60 -l 2,archi=m3:at86rf231+site=saclay
 ```
 ```
-iotlab-experiment wait --timeout 30 --cancel-on-timeou
+iotlab-experiment wait --timeout 30 --cancel-on-timeout
 ```
 ```
 iotlab-experiment --jmespath="items[*].network_address | sort(@)" get --nodes
