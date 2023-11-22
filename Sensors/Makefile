@@ -10,6 +10,7 @@ USEMODULE += ztimer_sec
 USEMODULE +=isl29020
 USEMODULE += lps331ap
 
+# Be carreful to set up correctly the path of the RIOT directory
 RIOTBASE ?= $(CURDIR)/../../RIOT
 
 include $(RIOTBASE)/Makefile.include
