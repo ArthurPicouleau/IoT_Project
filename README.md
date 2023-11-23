@@ -12,11 +12,11 @@ Next, create a folder within the riot/basics (in lowercase) folder. You can crea
 Then open a terminal and go to the folder containing the main.c file.
 Select an environment with the following command :
 ```
-env SITE=grenoble
+env SITE=saclay
 ```
-In our case, we have always chosen the grenoble site. 
+In our case, we have always chosen the saclay site. 
 ```
-iotlab-experiment submit -n "sensors_data" -d 20 -l 1,archi=m3:at86rf231+site=grenoble
+iotlab-experiment submit -n "sensors_data" -d 20 -l 1,archi=m3:at86rf231+site=saclay
 ```
 Here the experiment will last 20 minutes. This value can be modified. Similarly, the site can be changed by modifying the value of the SITE variable in the command. 
 Then write the following command:
