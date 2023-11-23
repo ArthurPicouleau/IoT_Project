@@ -47,7 +47,7 @@ Finally, in the "Action" section, click on "Open Terminal". You will then see th
 
 Secondly, we tried to communicate between two IOT LAB nodes using the Coap protocol.
 
-Create a new folder within the riot folder. Then copy the main.c file, the Makefile and the .ipynb file into your .
+Create a new folder within the riot folder. Then copy the main.c file, the Makefile, the gcoap_cli.c and the .ipynb file into your .
 
 Open two terminals in Jupyter and go to the folder containing the main.c file.
 In one of the terminals type the following 4 commands:
