@@ -14,7 +14,7 @@ Select an environment with the following command :
 ```
 env SITE=grenoble
 ```
-In our case, we have always chosen the grenoble site. You can choose: lille, paris, strasbourg, saclay.
+In our case, we have always chosen the grenoble site. 
 ```
 iotlab-experiment submit -n "sensors_data" -d 20 -l 1,archi=m3:at86rf231+site=grenoble
 ```
@@ -63,7 +63,7 @@ iotlab-experiment wait --timeout 30 --cancel-on-timeout
 ```
 iotlab-experiment --jmespath="items[*].network_address | sort(@)" get --nodes
 ```
-
+If you want you can choose: lille, paris, strasbourg, saclay.
 Then open the .ipynb file, which is a Jupyter notebook. Run the code. You will obtain two values: CHANNEL ID and PAN_ID, which are essential for establishing communication.
 Here you can see an example of values :
 
