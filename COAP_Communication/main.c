@@ -5,7 +5,7 @@
 #include "net/gcoap.h"
 #include "shell.h"
 #include "fmt.h"
-/* Include lpsxxx headers */
+
 #include "lpsxxx.h"
 #include "lpsxxx_params.h"
 
