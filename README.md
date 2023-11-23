@@ -1,4 +1,5 @@
-# IoT_Project
+# IoT_Project : Janne Uutela Dimitrios Primpas Arthur Picouleau
+
 
 We started with the idea of developing an application for a weather station. We therefore looked for a card with temperature, pressure and luminosity sensors.
 We decided to use the IOT_LAB M3 board because it contains all the sensors we need. 
