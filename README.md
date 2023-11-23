@@ -1,4 +1,4 @@
-# IoT_Project : Janne Uutela Dimitrios Primpas Arthur Picouleau
+# IoT_Project : Janne Uutela, Dimitrios Primpas and Arthur Picouleau
 
 
 We started with the idea of developing an application for a weather station. We therefore looked for a card with temperature, pressure and luminosity sensors.
