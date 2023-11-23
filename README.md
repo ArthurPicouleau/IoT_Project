@@ -130,4 +130,4 @@ You can adjust your security policies in aws iot-core security -> policies panel
 ## Part 4 : Demonstration video ##
 
 [Demonstration video]
-(https://youtu.be/o6aV18wc0wo)
+(https://youtu.be/pKcicKqbMaU)
