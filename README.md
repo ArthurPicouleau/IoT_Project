@@ -46,6 +46,7 @@ Finally, in the "Action" section, click on "Open Terminal". You will then see th
 ## Part 2 : COAP Communication ##
 
 Secondly, we tried to communicate between two IOT LAB nodes using the Coap protocol.
+Before starting, make sure that the first experiment has been completed or stopped.
 
 Create a new folder within the riot folder. Then copy the main.c file, the Makefile, the gcoap_cli.c and the .ipynb file into your .
 
