@@ -14,9 +14,9 @@
 #include "isl29020-internal.h"
 
 
-/* Declaration lpsxxx_t sensor variable (globally) */
+/* Declaration lpsxxx_t sensor variable  */
 static lpsxxx_t sensor;
-/* Declaration isl29020 sensor variable (globally) */
+/* Declaration isl29020 sensor variable  */
 static isl29020_t isl29020;
 
 static ssize_t _encode_link(const coap_resource_t *resource, char *buf,
