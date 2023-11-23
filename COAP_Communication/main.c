@@ -33,9 +33,9 @@
 #include "isl29020-internal.h"
 
 
-/* Declate lpsxxx_t sensor variable (globally) */
+/* Declaration lpsxxx_t sensor variable (globally) */
 static lpsxxx_t sensor;
-/* Declare isl29020 sensor variable (globally) */
+/* Declaration isl29020 sensor variable (globally) */
 static isl29020_t isl29020;
 
 static ssize_t _encode_link(const coap_resource_t *resource, char *buf,
@@ -45,7 +45,6 @@ static ssize_t _temperature_handler(coap_pkt_t* pdu, uint8_t *buf, size_t len, v
 static ssize_t _pressure_handler(coap_pkt_t* pdu, uint8_t *buf, size_t len, void *ctx);
 static ssize_t _light_handler(coap_pkt_t* pdu, uint8_t *buf, size_t len, void *ctx);
 
-/* CoAP resources. Must be sorted by path (ASCII order). */
 static const coap_resource_t _resources[] = {
     { "/temperature", COAP_GET, _temperature_handler, NULL },
     { "/pressure", COAP_GET, _pressure_handler, NULL },
@@ -54,13 +53,12 @@ static const coap_resource_t _resources[] = {
 };
 
 
-
 static ssize_t _temperature_handler(coap_pkt_t *pdu, uint8_t *buf, 
                                          size_t len, void *ctx)
 {
     (void)ctx;
 
-    /* Implement temperature GET handler */
+    /* Implementation the temperature GET handler */
     gcoap_resp_init(pdu, buf, len, COAP_CODE_CONTENT);
     coap_opt_add_format(pdu, COAP_FORMAT_TEXT);
     size_t resp_len = coap_opt_finish(pdu, COAP_OPT_FINISH_PAYLOAD);
@@ -87,7 +85,7 @@ static ssize_t _pressure_handler(coap_pkt_t *pdu, uint8_t *buf,
 {
     (void)ctx;
 
-     /* Implement pressure GET handler */
+     /* Implementation the pressure GET handler */
     gcoap_resp_init(pdu, buf, len, COAP_CODE_CONTENT);
     coap_opt_add_format(pdu, COAP_FORMAT_TEXT);
     size_t resp_len = coap_opt_finish(pdu, COAP_OPT_FINISH_PAYLOAD);
@@ -114,7 +112,7 @@ static ssize_t _light_handler(coap_pkt_t *pdu, uint8_t *buf,
 {
     (void)ctx;
 
-    /* Implement luminosity GET handler */
+    /* Implementation the luminosity GET handler */
     gcoap_resp_init(pdu, buf, len, COAP_CODE_CONTENT);
     coap_opt_add_format(pdu, COAP_FORMAT_TEXT);
     size_t resp_len = coap_opt_finish(pdu, COAP_OPT_FINISH_PAYLOAD);
@@ -179,16 +177,13 @@ int main(void)
         return 1;
     }
     lpsxxx_enable(&sensor);
-    /* for the thread running the shell */
     msg_init_queue(_main_msg_queue, MAIN_QUEUE_SIZE);
     gcoap_cli_init();
     puts("gcoap example app");
 
-    /* start shell */
     puts("All up, running the shell now");
     char line_buf[SHELL_DEFAULT_BUFSIZE];
     shell_run(shell_commands, line_buf, SHELL_DEFAULT_BUFSIZE);
 
-    /* should never be reached */
     return 0;
 }
