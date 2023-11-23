@@ -52,10 +52,10 @@ Open two terminals in Jupyter and go to the folder containing the main.c file.
 In one of the terminals type the following 4 commands:
 
 ```
-env SITE=saclay
+env SITE=grenoble
 ```
 ```
-iotlab-experiment submit -n "riot-coap" -d 60 -l 2,archi=m3:at86rf231+site=saclay
+iotlab-experiment submit -n "riot-coap" -d 60 -l 2,archi=m3:at86rf231+site=grenoble
 ```
 ```
 iotlab-experiment wait --timeout 30 --cancel-on-timeout
