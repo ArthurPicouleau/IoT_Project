@@ -53,10 +53,10 @@ Open two terminals in Jupyter and go to the folder containing the main.c file.
 In one of the terminals type the following 4 commands:
 
 ```
-env SITE=grenoble
+env SITE=saclay
 ```
 ```
-iotlab-experiment submit -n "riot-coap" -d 60 -l 2,archi=m3:at86rf231+site=grenoble
+iotlab-experiment submit -n "riot-coap" -d 60 -l 2,archi=m3:at86rf231+site=saclay
 ```
 ```
 iotlab-experiment wait --timeout 30 --cancel-on-timeout
@@ -64,7 +64,7 @@ iotlab-experiment wait --timeout 30 --cancel-on-timeout
 ```
 iotlab-experiment --jmespath="items[*].network_address | sort(@)" get --nodes
 ```
-If you want you can choose: lille, paris, strasbourg, saclay.
+If you want you can choose: lille, paris, strasbourg, grenoble.
 Then open the .ipynb file, which is a Jupyter notebook. Run the code. You will obtain two values: CHANNEL ID and PAN_ID, which are essential for establishing communication.
 Here you can see an example of values :
 
