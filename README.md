@@ -8,7 +8,8 @@ To develop our application we used RIOT OS on IoT-LAB.
 
 ## Part 1 : Sensors ##
 
-To run the code to retrieve data from the sensors, you need to go to the Jupyter Lab server on IoT-LAB.
+To run the code to retrieve data from the sensors, you need to go to the Jupyter Lab server on IoT-LAB. Here is the link of the Jupyter server : https://labs.iot-lab.info/hub/login?next=%2Fhub%2F
+
 Next, create a folder within the riot/basics (in lowercase) folder. You can create your folder in other place but don't forget to change the path in the makefile. Put in the main.c and Makefile files provided in the Sensors folder, in the Github repository.
 Then open a terminal and go to the folder containing the main.c file.
 Select an environment with the following command :
